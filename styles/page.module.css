@@ -1,0 +1,107 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.header > p {
+  margin: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 100px 0;
+}
+
+.input-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 30px 0;
+}
+
+.input-container input[type=submit] {
+  background: rgb(46, 46, 46);
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+  color: white;
+}
+
+.input-container input[type=submit]:hover {
+  background: rgb(28, 116, 119);
+
+}
+
+.input-form > div {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input-form {
+  display: flex;
+}
+
+.output-container {
+  width: 80vw;
+  overflow-x: auto;
+  white-space: nowrap; 
+
+  margin: 10px auto; 
+  display: block;
+  overflow-x: auto;
+  background: #e0e0e0;
+  border-radius: 6px;
+}
+.sb-output {
+  margin: 6px 0;
+}
+.sb-output > code {
+  white-space: nowrap;
+}
+
+.highlight {
+  background: #acaa30
+}
+
+
+.output-content {
+  display: flex;
+}
+
+.line-numbers {
+  width: 100%; /* Adjust as needed */
+  background-color: #f5f5f5; /* Background color for line numbers */
+  text-align: right;
+  padding: 0 10px; /* Space before the border */
+  margin-right: 10px;
+  border-right: 2px solid #3b3a3a;
+  font-size: 0.8em;
+}
+
+.line-number {
+  padding: 5px 0; /* Vertical padding for each line number */
+}
+
+.code-content {
+  flex-grow: 1;
+}
+
+.code-text {
+  display: block; /* Ensures each code line is on a new line */
+  padding: 5px 10px;
+  /* Additional styles for your code text */
+}
