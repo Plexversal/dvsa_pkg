@@ -6,12 +6,12 @@ import Image from "next/image";
 
 export default function Header() {
     return <header className={styles["header"]}>
-    <Image
+    <img
       alt="dvsa-logo"
       src="/DVSA_logo.jpg"
       width="96"
       height="64"
-    ></Image>
+    ></img>
     <p>Logs processing</p>
   </header>
 }
